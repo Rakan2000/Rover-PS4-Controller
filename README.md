@@ -1,4 +1,4 @@
-Download the files from discord and replace the "sketch.cpp" with the one in this repository. You would need to also change the "Cmake" version and that is by adding the "@ 6.6.0" to the file.
+Download the files from discord and replace the "sketch.cpp" with the one in this repository. You would need to also change the "Cmake" version and that is by adding the "@ 6.6.0" to the file "platformio.ini" at line "14".
 
 
 [env:esp32-wroom]
