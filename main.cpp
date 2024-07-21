@@ -6,10 +6,26 @@
 
 #define led 2
 
+const int left_pwm_pin = 13;
+const int left_dir_pin = 12;
+const int right_pwm_pin = 26;
+const int right_dir_pin = 25;
+
+const int left_forward_dir = 1;
+const int right_forward_dir = 0;
+
 void setup()
 {
   Serial.begin(9600);
   pinMode(led, OUTPUT);
+
+    pinMode(right_pwm_pin, OUTPUT);
+    pinMode(left_pwm_pin, OUTPUT);
+    pinMode(right_dir_pin, OUTPUT);
+    pinMode(left_dir_pin, OUTPUT);
+
+    digitalWrite(left_dir_pin, left_forward_dir);
+    digitalWrite(right_dir_pin, right_forward_dir);
 }
 
 void loop()
